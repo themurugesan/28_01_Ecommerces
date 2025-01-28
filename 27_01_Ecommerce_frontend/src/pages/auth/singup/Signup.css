@@ -1,0 +1,36 @@
+.center-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.center-form Form{
+    max-width: 40vh;
+    width: 100%;
+    padding: 2vh;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.center-form Form Label{
+    font-weight: bold;
+}
+
+.center-form Form .form-control{
+    margin-bottom: 2vh;
+    padding: 1vh;
+
+}
+.center-form Form .btn{
+    background-color: #1877f2;
+    color: #fff;
+    border: none;
+    padding: 1vh 0;
+
+}
+.center-form Form .btn:hover{
+    background-color: #166fe5;
+}

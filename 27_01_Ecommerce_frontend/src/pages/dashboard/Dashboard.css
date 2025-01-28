@@ -1,0 +1,145 @@
+/* Global Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Heading and Category Title */
+.heading {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Container for the images */
+.images-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Image card layout */
+.image-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.image-card:hover {
+  transform: translateY(-5px);  /* Card hover effect */
+}
+
+.image-thumbnail {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* Title, description, and price */
+.image-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.image-description {
+  font-size: 1rem;
+  color: #555;
+  margin: 10px 0;
+}
+
+.image-price {
+  font-size: 1.1rem;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+.add-to-cart-btn,
+.delete-btn {
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Add to Cart Button */
+.add-to-cart-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #45a049;
+}
+
+
+
+/* View Cart Button */
+.view-cart-btn {
+  background-color: #2196f3;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-cart-btn:hover {
+  background-color: #1976d2;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 15px;
+  }
+
+  .heading {
+    font-size: 1.8rem;
+  }
+
+  .images-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .image-card {
+    padding: 12px;
+  }
+
+  .add-to-cart-btn,
+  .delete-btn,
+  .view-cart-btn {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+}
